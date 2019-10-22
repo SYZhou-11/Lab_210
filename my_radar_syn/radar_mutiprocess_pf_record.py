@@ -1,4 +1,4 @@
-# 双雷达单目标跟踪，单目标找多个最大值
+# 双雷达单目标跟踪，对保存的数据进行处理
 
 from __future__ import division, print_function
 import numpy as np

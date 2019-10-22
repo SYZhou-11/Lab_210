@@ -1,4 +1,4 @@
-# 双雷达单目标跟踪，单目标找多个最大值
+# 双雷达单目标跟踪（实时）
 
 from __future__ import division, print_function
 from pymoduleconnector import ModuleConnector
@@ -166,7 +166,7 @@ def get_point(d1, d2, flag_r1, flag_r2):
 		dis1 = d1.get(True)
 		dis2 = d2.get(True)
 		if dis1 != 0 and dis2 != 0:
-			aa = sympy.solve([(x + 0.8) ** 2 + y ** 2 - dis1 ** 2, (x - 0.8) ** 2 + y ** 2 - dis2 ** 2], [x, y])
+			aa = sympy.solve([(x + 0.8) ** 2 + y ** 2 - dis1 ** 2, (x - 0.8) ** 2 + y ** 2 - dis2 ** 2], [x, y]) #雷达1(-0.8, 0) 雷达2(0.8, 0)
 			# if q1.value != 0 and q2.value != 0:
 			# aa = sympy.solve([x ** 2 + y ** 2 - q1.value ** 2, (x - 1.6) ** 2 + y ** 2 - q2.value ** 2], [x, y])
 			result = [round(aa[0][0], 2), round(abs(aa[0][1]), 2)]
