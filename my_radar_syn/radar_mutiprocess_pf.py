@@ -129,18 +129,22 @@ def record_radar(device_name, i, distance, counter_flag):
 		if icounter_rad1 > 0:
 			frames_diff_rad1[icounter_rad1 - 1] = frames_rad1[icounter_rad1] - frames_rad1[icounter_rad1 - 1]
 			if icounter_rad1 == 1:
-				current_index = np.argmax(np.abs(frames_diff_rad1[icounter_rad1 - 1]))
+				current_index = 80 #起点设置在坐标（0，4）
+				#current_index = np.argmax(np.abs(frames_diff_rad1[icounter_rad1 - 1]))
 				#dis_max_rad1.append(last_index)
 			else:
 				last_index = current_index
-				current_index = top_n_arg(last_index, np.abs(frames_diff_rad1[icounter_rad1 - 1]), 5)
+				current_index = top_n_arg(last_index, np.abs(frames_diff_rad1[icounter_rad1 - 1]), 6)
+				if current_index - last_index >= 5:
+					current_index = last_index
 				"""
 				if abs(temp - last_index) <= 10:
 					last_index = temp
 				"""
 				#last_index = temp
 				#dis_max_rad1.append(last_index)
-			real_dis = 0.0514 * last_index
+
+			real_dis = 0.0514 * current_index
 			print('radar_' + i + ': ', real_dis)
 			distance.put(real_dis)
 		counter_flag.value = icounter_rad1
