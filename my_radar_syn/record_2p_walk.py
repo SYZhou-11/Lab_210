@@ -91,3 +91,4 @@ if __name__ == "__main__":
     pg_rad2.start()
     pg_rad1.join()
     pg_rad2.join()
+    winsound.Beep(1000, 500)
