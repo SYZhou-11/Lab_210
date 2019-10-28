@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="cba58dd1-7d3e-4218-8981-4b082841ba8c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/check_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/check_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process_2p.py" beforeDir="false" afterPath="$PROJECT_DIR$/process_2p.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/radar_mutiprocess_pf.py" beforeDir="false" afterPath="$PROJECT_DIR$/radar_mutiprocess_pf.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/record_2p_walk.py" beforeDir="false" afterPath="$PROJECT_DIR$/record_2p_walk.py" afterDir="false" />
     </list>
@@ -51,7 +53,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.record_2p_walk">
+  <component name="RunManager" selected="Python.process_2p">
     <configuration name="check_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="radar_syc" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -74,7 +76,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="radar_multiprocess_pf_value" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="process_2p" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="radar_syc" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -87,7 +89,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/radar_multiprocess_pf_value.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/process_2p.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -165,17 +167,17 @@
     <list>
       <item itemvalue="Python.check_data" />
       <item itemvalue="Python.radar_mutiprocess_pf" />
-      <item itemvalue="Python.radar_multiprocess_pf_value" />
       <item itemvalue="Python.radar_mutiprocess_pf_record" />
       <item itemvalue="Python.record_2p_walk" />
+      <item itemvalue="Python.process_2p" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.record_2p_walk" />
+        <item itemvalue="Python.process_2p" />
         <item itemvalue="Python.radar_mutiprocess_pf" />
-        <item itemvalue="Python.radar_mutiprocess_pf_record" />
         <item itemvalue="Python.check_data" />
-        <item itemvalue="Python.radar_multiprocess_pf_value" />
+        <item itemvalue="Python.record_2p_walk" />
+        <item itemvalue="Python.radar_mutiprocess_pf_record" />
       </list>
     </recent_temporary>
   </component>
@@ -219,7 +221,10 @@
       <workItem from="1571734987740" duration="1212000" />
       <workItem from="1571741739913" duration="1500000" />
       <workItem from="1571745320809" duration="2177000" />
-      <workItem from="1571798032677" duration="6578000" />
+      <workItem from="1571798032677" duration="6753000" />
+      <workItem from="1571883359961" duration="2048000" />
+      <workItem from="1571901352258" duration="3220000" />
+      <workItem from="1571984063231" duration="4961000" />
     </task>
     <servers />
   </component>
@@ -243,14 +248,14 @@
     <SUITE FILE_PATH="coverage/radar_syc$XEP_X4M200_X4M300_plot_raw_data.coverage" NAME="XEP_X4M200_X4M300_plot_raw_data Coverage Results" MODIFIED="1569831326383" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/my_radar_syn$test_multi_value.coverage" NAME="test_multi_value Coverage Results" MODIFIED="1571655713009" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/my_radar_syc$record_2p_walk.coverage" NAME="record_2p_walk Coverage Results" MODIFIED="1570795618133" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/my_radar_syn$process_2p.coverage" NAME="process_2p Coverage Results" MODIFIED="1571389349346" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/my_radar_syn$check_data.coverage" NAME="check_data Coverage Results" MODIFIED="1571709144277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/my_radar_syn$process_2p.coverage" NAME="process_2p Coverage Results" MODIFIED="1571994234899" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/my_radar_syn$check_data.coverage" NAME="check_data Coverage Results" MODIFIED="1571984844485" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/radar_syc$test_radar_mutiprocess_early.coverage" NAME="test_radar_mutiprocess_early Coverage Results" MODIFIED="1570533863672" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/my_radar_syn$record_2p_walk.coverage" NAME="record_2p_walk Coverage Results" MODIFIED="1571827015597" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/my_radar_syn$record_2p_walk.coverage" NAME="record_2p_walk Coverage Results" MODIFIED="1571984662293" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/radar_syc$radar_mutiprocess_pf.coverage" NAME="radar_mutiprocess_pf Coverage Results" MODIFIED="1570782711315" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/radar_syc$test_radar_mutiprocess.coverage" NAME="test_radar_mutiprocess Coverage Results" MODIFIED="1569831732459" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/radar_syc$check_data.coverage" NAME="check_data Coverage Results" MODIFIED="1570793723772" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/my_radar_syn$radar_mutiprocess_pf.coverage" NAME="radar_mutiprocess_pf Coverage Results" MODIFIED="1571825954073" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/my_radar_syn$radar_mutiprocess_pf.coverage" NAME="radar_mutiprocess_pf Coverage Results" MODIFIED="1571985115305" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/my_radar_syn$radar_multiprocess_pf_value.coverage" NAME="radar_multiprocess_pf_value Coverage Results" MODIFIED="1571708005485" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/radar_syc$test_plot_ion.coverage" NAME="test_plot_ion Coverage Results" MODIFIED="1569575071105" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/radar_syc$test_radar_mutiprocess_mf.coverage" NAME="test_radar_mutiprocess_mf Coverage Results" MODIFIED="1570782670508" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

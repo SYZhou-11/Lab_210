@@ -22,8 +22,8 @@ def get_main(filename):
     return data_in, data_mti
 
 
-check_radar1_ori, check_radar1_mti = get_main('D:\Working\PyCharmSpace\my_radar_syn\walk_radar_1_time.struct_time(tm_year=2019, tm_mon=10, tm_mday=22, tm_hour=9, tm_min=38, tm_sec=46, tm_wday=1, tm_yday=295, tm_isdst=0).npy')
-check_radar2_ori, check_radar2_mti = get_main('D:\Working\PyCharmSpace\my_radar_syn\walk_radar_2_time.struct_time(tm_year=2019, tm_mon=10, tm_mday=22, tm_hour=9, tm_min=38, tm_sec=46, tm_wday=1, tm_yday=295, tm_isdst=0).npy')
+check_radar1_ori, check_radar1_mti = get_main('D:\Working\PyCharmSpace\my_radar\My_radar\my_radar_syn\outside_p2_walk_radar_1_1571984691.5356767.npy')
+check_radar2_ori, check_radar2_mti = get_main('D:\Working\PyCharmSpace\my_radar\My_radar\my_radar_syn\outside_p2_walk_radar_2_1571984691.5356767.npy')
 plt.figure(1)
 plt.imshow(abs(check_radar1_ori), origin='lower')
 plt.title('Radar1_Ori')

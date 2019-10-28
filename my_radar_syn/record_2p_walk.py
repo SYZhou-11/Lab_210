@@ -7,7 +7,7 @@ import time
 from multiprocessing import Process, Manager, Pool, Queue
 
 test_seconds = 20
-fps = 10
+fps = 5
 nframes = test_seconds * fps
 
 
@@ -49,7 +49,7 @@ def xep_setup(device_name, baseband):
     xep.x4driver_set_downconversion(int(baseband))
 
     # Set detection range
-    xep.x4driver_set_frame_area(0, 9.0)
+    xep.x4driver_set_frame_area(0, 8.0)
 
     return xep
 
@@ -78,8 +78,8 @@ def record_radar(device_name, i):
 
     xep_rad1.x4driver_set_fps(0)
     clear_buffer(xep_rad1)
-    file_str = 'p2_walk_radar_' + i + '_{}'
-    np.save(file_str.format(time.localtime()), frames_rad1)
+    file_str = 'outside_p2_walk_radar_' + i + '_{}'
+    np.save(file_str.format(time.time()), frames_rad1)
     xep_rad1.mc.close()
 
 

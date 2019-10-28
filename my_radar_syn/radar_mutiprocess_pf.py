@@ -112,7 +112,7 @@ def record_radar(device_name, i, distance):
 			else:
 				last_index = current_index
 				current_index = top_n_arg(last_index, np.abs(frames_diff_rad1[icounter_rad1 - 1]), 6)
-				if abs(current_index - last_index) >= 5:
+				if abs(current_index - last_index) >= 8:
 					current_index = last_index
 				#last_index = temp
 				#dis_max_rad1.append(last_index)
@@ -125,7 +125,7 @@ def record_radar(device_name, i, distance):
 
 	xep_rad1.x4driver_set_fps(0)
 	clear_buffer(xep_rad1)
-	file_str = 'walk_radar_' + i + '_{}'
+	file_str = 'outside_walk_radar_' + i + '_{}'
 	np.save(file_str.format(time.localtime()), frames_rad1)
 	xep_rad1.mc.close()
 
@@ -160,6 +160,7 @@ def get_point(d1, d2, flag_1, flag_2):
 	plt.show()
 
 
+
 if __name__ == "__main__":
 	radar_q1 = Queue()
 	radar_q2 = Queue()
@@ -178,6 +179,7 @@ if __name__ == "__main__":
 	p_out.start()
 	pg_rad1.join()
 	pg_rad2.join()
+	winsound.Beep(1000, 500)
 	#p_out.terminate()
 	p_out.join()
 

@@ -55,11 +55,27 @@ def find2_max(arr, n_left, n_right, T):
     return toa, pic
 
 
-trail_41_ori, trail_41_mti, trail_41_mti3 = get_main('D:\Working\PycharmSpace\my_radar_syn\\2p_1564400587.1684678.npy')
-#trail_42_ori, trail_42_mti, trail_42_clutter_reduce = get_main('D:\Working\PycharmSpace\my_radar_syn\p2_walk_radar_2_1570795371.564845.npy')
-toa_41, pic_41 = find2_max(trail_41_mti, 10, 25, 5e-4)
-toa_41_r, pic_41_r = find2_max(trail_41_mti3, 10, 25, 2e-3)
-#toa_42, pic_42 = find2_max(trail_42_mti, 10, 25, 5e-4)
+def find_2max(arr, n_left, n_right):
+    fast_t = arr.shape[0]
+    low_t = arr.shape[1]
+    max2_arr = np.zeros(shape=(fast_t, low_t))
+    #arr1 = np.zeros(shape=(fast_t, low_t))
+    arr1 = arr.copy()
+    for j in range(low_t):
+        arr1[0:10, j] = 0
+        max_index1 = np.argmax(abs(arr1[:, j]))
+        max2_arr[max_index1, j] = 1
+        arr1[max_index1 - n_left:max_index1+n_right, j] = 0
+        max_index2 = np.argmax(abs(arr1[:, j]))
+        max2_arr[max_index2, j] = 1
+    return max2_arr
+
+
+trail_41_ori, trail_41_mti, trail_41_mti3 = get_main('D:\Working\PyCharmSpace\my_radar\My_radar\my_radar_syn\outside_p2_walk_radar_1_1571984559.2247632.npy')
+trail_42_ori, trail_42_mti, trail_42_mti3 = get_main('D:\Working\PyCharmSpace\my_radar\My_radar\my_radar_syn\outside_p2_walk_radar_2_1571984559.2258976.npy')
+pic_41 = find_2max(trail_41_mti, 10, 10)
+#toa_41_r, pic_41_r = find2_max(trail_41_mti3, 10, 25, 2e-3)
+pic_42 = find_2max(trail_42_mti, 10, 10)
 
 plt.rcParams['font.sans-serif'] = ['SimHei']
 plt.rcParams['axes.unicode_minus'] = False
@@ -95,16 +111,23 @@ plt.figure(2)
 plt.imshow(abs(trail_41_mti), origin='lower')
 plt.title('雷达1：mti')
 plt.figure(3)
-plt.imshow(abs(trail_41_mti3), origin='lower')
-plt.title('雷达1：mti3阶')
-
-plt.figure(4)
 plt.imshow(abs(pic_41), origin='lower')
-plt.title('雷达1：轨迹')
-
+plt.title('雷达1：求大值')
+plt.figure(4)
+plt.imshow(abs(trail_42_ori), origin='lower')
+plt.title('雷达2：原始')
 plt.figure(5)
-plt.imshow(abs(pic_41_r), origin='lower')
-plt.title('雷达1：轨迹_新')
-
-
+plt.imshow(abs(trail_42_mti), origin='lower')
+plt.title('雷达2：mti')
+plt.figure(6)
+plt.imshow(abs(pic_42), origin='lower')
+plt.title('雷达2：最大值')
+"""
+plt.figure(3)
+plt.imshow(abs(trail_42_ori), origin='lower')
+plt.title('雷达2：原始')
+plt.figure(4)
+plt.imshow(abs(trail_42_mti), origin='lower')
+plt.title('雷达2：mti')
+"""
 plt.show()
